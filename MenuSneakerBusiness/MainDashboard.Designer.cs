@@ -89,7 +89,7 @@
             buttonPOS.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonPOS.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 128, 0);
             buttonPOS.FlatStyle = FlatStyle.Flat;
-            buttonPOS.Font = new Font("Verdana", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonPOS.Font = new Font("Verdana", 25.8000011F, FontStyle.Regular, GraphicsUnit.Point);
             buttonPOS.ForeColor = Color.White;
             buttonPOS.Location = new Point(1164, 0);
             buttonPOS.Name = "buttonPOS";
@@ -107,7 +107,7 @@
             buttonConsignment.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonConsignment.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 128, 0);
             buttonConsignment.FlatStyle = FlatStyle.Flat;
-            buttonConsignment.Font = new Font("Verdana", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonConsignment.Font = new Font("Verdana", 25.8000011F, FontStyle.Regular, GraphicsUnit.Point);
             buttonConsignment.ForeColor = Color.White;
             buttonConsignment.Location = new Point(714, 0);
             buttonConsignment.Name = "buttonConsignment";
@@ -115,6 +115,7 @@
             buttonConsignment.TabIndex = 2;
             buttonConsignment.Text = "Consignment";
             buttonConsignment.UseVisualStyleBackColor = false;
+            buttonConsignment.Click += buttonConsignment_Click;
             // 
             // buttonInventory
             // 
@@ -125,7 +126,7 @@
             buttonInventory.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonInventory.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 128, 0);
             buttonInventory.FlatStyle = FlatStyle.Flat;
-            buttonInventory.Font = new Font("Verdana", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonInventory.Font = new Font("Verdana", 25.8000011F, FontStyle.Regular, GraphicsUnit.Point);
             buttonInventory.ForeColor = Color.White;
             buttonInventory.Location = new Point(264, 0);
             buttonInventory.Name = "buttonInventory";
@@ -134,6 +135,7 @@
             buttonInventory.Text = "Inventory";
             buttonInventory.TextImageRelation = TextImageRelation.TextAboveImage;
             buttonInventory.UseVisualStyleBackColor = false;
+            buttonInventory.Click += buttonInventory_Click;
             // 
             // menuDashboardLogo
             // 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hapi\\Desktop\\Collab Files\\MenuSneakerBusiness\\MenuSneakerBusiness\\MenuSneakerBusiness.csproj": {}
+    "C:\\Users\\Hapi\\Desktop\\Collab\\MenuSneakerBusiness\\MenuSneakerBusiness\\MenuSneakerBusiness.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hapi\\Desktop\\Collab Files\\MenuSneakerBusiness\\MenuSneakerBusiness\\MenuSneakerBusiness.csproj": {
+    "C:\\Users\\Hapi\\Desktop\\Collab\\MenuSneakerBusiness\\MenuSneakerBusiness\\MenuSneakerBusiness.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hapi\\Desktop\\Collab Files\\MenuSneakerBusiness\\MenuSneakerBusiness\\MenuSneakerBusiness.csproj",
+        "projectUniqueName": "C:\\Users\\Hapi\\Desktop\\Collab\\MenuSneakerBusiness\\MenuSneakerBusiness\\MenuSneakerBusiness.csproj",
         "projectName": "MenuSneakerBusiness",
-        "projectPath": "C:\\Users\\Hapi\\Desktop\\Collab Files\\MenuSneakerBusiness\\MenuSneakerBusiness\\MenuSneakerBusiness.csproj",
+        "projectPath": "C:\\Users\\Hapi\\Desktop\\Collab\\MenuSneakerBusiness\\MenuSneakerBusiness\\MenuSneakerBusiness.csproj",
         "packagesPath": "C:\\Users\\Hapi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hapi\\Desktop\\Collab Files\\MenuSneakerBusiness\\MenuSneakerBusiness\\obj\\",
+        "outputPath": "C:\\Users\\Hapi\\Desktop\\Collab\\MenuSneakerBusiness\\MenuSneakerBusiness\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

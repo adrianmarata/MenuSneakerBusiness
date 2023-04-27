@@ -18,5 +18,10 @@ namespace MenuSneakerBusiness
             MainDashboard mainDashboard = new MainDashboard();
             mainDashboard.Show();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            textBoxPassword.UseSystemPasswordChar = !textBoxPassword.UseSystemPasswordChar;
+        }
     }
 }

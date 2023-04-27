@@ -40,9 +40,11 @@
             buttonSignIn = new Button();
             usernameLogo = new PictureBox();
             pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)usernameLogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -127,6 +129,7 @@
             textBoxPassword.Name = "textBoxPassword";
             textBoxPassword.Size = new Size(440, 19);
             textBoxPassword.TabIndex = 5;
+            textBoxPassword.UseSystemPasswordChar = true;
             // 
             // buttonSignIn
             // 
@@ -160,11 +163,23 @@
             pictureBox1.TabIndex = 8;
             pictureBox1.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(430, 329);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(32, 32);
+            pictureBox2.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox2.TabIndex = 9;
+            pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(482, 530);
+            Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(usernameLogo);
             Controls.Add(buttonSignIn);
@@ -182,6 +197,7 @@
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)usernameLogo).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -199,5 +215,6 @@
         private Button buttonExit;
         private PictureBox usernameLogo;
         private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
     }
 }

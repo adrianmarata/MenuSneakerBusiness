@@ -21,5 +21,19 @@ namespace MenuSneakerBusiness
         {
             Application.Exit();
         }
+
+        private void buttonInventory_Click(object sender, EventArgs e)
+        {
+            panelContents.Controls.Clear();
+            Inventory inventory = new Inventory();
+            inventory.Dock = DockStyle.Fill;
+            panelContents.Controls.Add(inventory);
+        }
+
+        private void buttonConsignment_Click(object sender, EventArgs e)
+        {
+            Consignor consignor = new Consignor();
+            consignor.ShowDialog();
+        }
     }
 }
