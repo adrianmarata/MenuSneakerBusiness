@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Consignment));
             panelSearch = new Panel();
-            buttonAddItem = new Button();
+            buttonAddConsignor = new Button();
             panelUnderLineSearch = new Panel();
             textBoxSearchInput = new TextBox();
             buttonSearch = new Button();
@@ -42,7 +42,7 @@
             // panelSearch
             // 
             panelSearch.BackColor = Color.FromArgb(242, 190, 167);
-            panelSearch.Controls.Add(buttonAddItem);
+            panelSearch.Controls.Add(buttonAddConsignor);
             panelSearch.Controls.Add(panelUnderLineSearch);
             panelSearch.Controls.Add(textBoxSearchInput);
             panelSearch.Controls.Add(buttonSearch);
@@ -54,25 +54,26 @@
             panelSearch.TabIndex = 1;
             panelSearch.TabStop = true;
             // 
-            // buttonAddItem
+            // buttonAddConsignor
             // 
-            buttonAddItem.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            buttonAddItem.BackColor = Color.Transparent;
-            buttonAddItem.Dock = DockStyle.Right;
-            buttonAddItem.FlatAppearance.BorderColor = Color.White;
-            buttonAddItem.FlatAppearance.BorderSize = 2;
-            buttonAddItem.FlatAppearance.MouseOverBackColor = Color.FromArgb(241, 207, 192);
-            buttonAddItem.FlatStyle = FlatStyle.Flat;
-            buttonAddItem.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonAddItem.Image = (Image)resources.GetObject("buttonAddItem.Image");
-            buttonAddItem.ImageAlign = ContentAlignment.MiddleRight;
-            buttonAddItem.Location = new Point(1660, 0);
-            buttonAddItem.Name = "buttonAddItem";
-            buttonAddItem.Size = new Size(242, 75);
-            buttonAddItem.TabIndex = 2;
-            buttonAddItem.Text = "Add Consignor";
-            buttonAddItem.TextImageRelation = TextImageRelation.ImageBeforeText;
-            buttonAddItem.UseVisualStyleBackColor = false;
+            buttonAddConsignor.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            buttonAddConsignor.BackColor = Color.Transparent;
+            buttonAddConsignor.Dock = DockStyle.Right;
+            buttonAddConsignor.FlatAppearance.BorderColor = Color.White;
+            buttonAddConsignor.FlatAppearance.BorderSize = 2;
+            buttonAddConsignor.FlatAppearance.MouseOverBackColor = Color.FromArgb(241, 207, 192);
+            buttonAddConsignor.FlatStyle = FlatStyle.Flat;
+            buttonAddConsignor.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonAddConsignor.Image = (Image)resources.GetObject("buttonAddConsignor.Image");
+            buttonAddConsignor.ImageAlign = ContentAlignment.MiddleRight;
+            buttonAddConsignor.Location = new Point(1660, 0);
+            buttonAddConsignor.Name = "buttonAddConsignor";
+            buttonAddConsignor.Size = new Size(242, 75);
+            buttonAddConsignor.TabIndex = 2;
+            buttonAddConsignor.Text = "Add Consignor";
+            buttonAddConsignor.TextImageRelation = TextImageRelation.ImageBeforeText;
+            buttonAddConsignor.UseVisualStyleBackColor = false;
+            buttonAddConsignor.Click += buttonAddConsignor_Click;
             // 
             // panelUnderLineSearch
             // 
@@ -143,7 +144,7 @@
         #endregion
 
         private Panel panelSearch;
-        private Button buttonAddItem;
+        private Button buttonAddConsignor;
         private Panel panelUnderLineSearch;
         private TextBox textBoxSearchInput;
         private Button buttonSearch;
