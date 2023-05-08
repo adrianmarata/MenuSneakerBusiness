@@ -1,3 +1,3 @@
-#COLLAB
+# COLLAB
 
-Integrative Programming - Information Management
+INTEGRATIVE PROGRAMMING - INFORMATION MANAGEMENT
