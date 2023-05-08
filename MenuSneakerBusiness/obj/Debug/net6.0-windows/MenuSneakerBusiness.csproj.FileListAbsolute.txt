@@ -39,3 +39,8 @@ C:\Users\Hapi\Desktop\Collab\MenuSneakerBusiness\MenuSneakerBusiness\obj\Debug\n
 C:\Users\Hapi\Desktop\Collab\MenuSneakerBusiness\MenuSneakerBusiness\obj\Debug\net6.0-windows\ref\MenuSneakerBusiness.dll
 C:\Users\Hapi\Desktop\Collab\MenuSneakerBusiness\MenuSneakerBusiness\obj\Debug\net6.0-windows\MenuSneakerBusiness.addItem.resources
 C:\Users\Hapi\Desktop\Collab\MenuSneakerBusiness\MenuSneakerBusiness\obj\Debug\net6.0-windows\MenuSneakerBusiness.Consignor.resources
+C:\Users\Hapi\Desktop\Collab\MenuSneakerBusiness\MenuSneakerBusiness\obj\Debug\net6.0-windows\MenuSneakerBusiness.PointOfSale.resources
+C:\Users\Hapi\Desktop\Collab\MenuSneakerBusiness\MenuSneakerBusiness\obj\Debug\net6.0-windows\MenuSneakerBusiness.Consignment.resources
+C:\Users\Hapi\Desktop\Collab\MenuSneakerBusiness\MenuSneakerBusiness\obj\Debug\net6.0-windows\MenuSneakerBusiness.Pay.resources
+C:\Users\Hapi\Desktop\Collab\MenuSneakerBusiness\MenuSneakerBusiness\obj\Debug\net6.0-windows\MenuSneakerBusiness.Financial.resources
+C:\Users\Hapi\Desktop\Collab\MenuSneakerBusiness\MenuSneakerBusiness\obj\Debug\net6.0-windows\MenuSneakerBusiness.addProduct.resources

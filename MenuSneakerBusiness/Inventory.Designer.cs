@@ -66,11 +66,14 @@
             buttonAddItem.FlatAppearance.BorderSize = 2;
             buttonAddItem.FlatAppearance.MouseOverBackColor = Color.FromArgb(241, 207, 192);
             buttonAddItem.FlatStyle = FlatStyle.Flat;
+            buttonAddItem.Image = (Image)resources.GetObject("buttonAddItem.Image");
+            buttonAddItem.ImageAlign = ContentAlignment.MiddleRight;
             buttonAddItem.Location = new Point(1660, 0);
             buttonAddItem.Name = "buttonAddItem";
             buttonAddItem.Size = new Size(242, 75);
             buttonAddItem.TabIndex = 2;
             buttonAddItem.Text = "Add Item";
+            buttonAddItem.TextImageRelation = TextImageRelation.ImageBeforeText;
             buttonAddItem.UseVisualStyleBackColor = false;
             buttonAddItem.Click += buttonAddItem_Click;
             // 

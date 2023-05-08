@@ -4,8 +4,17 @@
     <Compile Update="addItem.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="addProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Consignment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Consignor.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Financial.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Inventory.cs">
       <SubType>UserControl</SubType>
@@ -15,6 +24,12 @@
     </Compile>
     <Compile Update="Login.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PointOfSale.cs">
+      <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
 </Project>
