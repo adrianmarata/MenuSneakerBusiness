@@ -117,8 +117,9 @@
             // buttonProceed
             // 
             buttonProceed.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            buttonProceed.BackColor = SystemColors.ActiveCaption;
+            buttonProceed.BackColor = Color.FromArgb(255, 101, 1);
             buttonProceed.Font = new Font("Verdana", 25.8000011F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonProceed.ForeColor = Color.White;
             buttonProceed.Location = new Point(156, 459);
             buttonProceed.Name = "buttonProceed";
             buttonProceed.Size = new Size(229, 76);

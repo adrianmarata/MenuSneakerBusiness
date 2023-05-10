@@ -66,7 +66,7 @@
             buttonAddItem.FlatAppearance.BorderSize = 2;
             buttonAddItem.FlatAppearance.MouseOverBackColor = Color.FromArgb(241, 207, 192);
             buttonAddItem.FlatStyle = FlatStyle.Flat;
-            buttonAddItem.Image = (Image)resources.GetObject("buttonAddItem.Image");
+            buttonAddItem.Image = Properties.Resources.iconadd;
             buttonAddItem.ImageAlign = ContentAlignment.MiddleRight;
             buttonAddItem.Location = new Point(1660, 0);
             buttonAddItem.Name = "buttonAddItem";
@@ -105,7 +105,7 @@
             buttonSearch.FlatAppearance.MouseOverBackColor = Color.FromArgb(241, 207, 192);
             buttonSearch.FlatStyle = FlatStyle.Flat;
             buttonSearch.ForeColor = SystemColors.ActiveCaptionText;
-            buttonSearch.Image = (Image)resources.GetObject("buttonSearch.Image");
+            buttonSearch.Image = Properties.Resources.iconsearch;
             buttonSearch.ImageAlign = ContentAlignment.MiddleRight;
             buttonSearch.Location = new Point(0, 0);
             buttonSearch.Margin = new Padding(5, 4, 5, 4);
@@ -157,6 +157,7 @@
             // 
             AutoScaleDimensions = new SizeF(13F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             Controls.Add(dataGridView1);
             Controls.Add(panelSearch);
             Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);

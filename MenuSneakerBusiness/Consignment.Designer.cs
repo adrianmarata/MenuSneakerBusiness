@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Consignment));
             panelSearch = new Panel();
             buttonAddConsignor = new Button();
             panelUnderLineSearch = new Panel();
@@ -64,7 +63,7 @@
             buttonAddConsignor.FlatAppearance.MouseOverBackColor = Color.FromArgb(241, 207, 192);
             buttonAddConsignor.FlatStyle = FlatStyle.Flat;
             buttonAddConsignor.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonAddConsignor.Image = (Image)resources.GetObject("buttonAddConsignor.Image");
+            buttonAddConsignor.Image = Properties.Resources.iconadd;
             buttonAddConsignor.ImageAlign = ContentAlignment.MiddleRight;
             buttonAddConsignor.Location = new Point(1660, 0);
             buttonAddConsignor.Name = "buttonAddConsignor";
@@ -104,7 +103,7 @@
             buttonSearch.FlatStyle = FlatStyle.Flat;
             buttonSearch.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
             buttonSearch.ForeColor = SystemColors.ActiveCaptionText;
-            buttonSearch.Image = (Image)resources.GetObject("buttonSearch.Image");
+            buttonSearch.Image = Properties.Resources.iconsearch;
             buttonSearch.ImageAlign = ContentAlignment.MiddleRight;
             buttonSearch.Location = new Point(0, 0);
             buttonSearch.Margin = new Padding(5, 4, 5, 4);

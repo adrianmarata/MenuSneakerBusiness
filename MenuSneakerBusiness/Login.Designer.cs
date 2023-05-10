@@ -49,7 +49,7 @@
             // 
             // panel1
             // 
-            panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
+            panel1.BackgroundImage = Properties.Resources.MENU_LOGO__1_;
             panel1.Controls.Add(buttonExit);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
@@ -133,8 +133,9 @@
             // 
             // buttonSignIn
             // 
-            buttonSignIn.BackColor = SystemColors.ActiveCaption;
+            buttonSignIn.BackColor = Color.FromArgb(255, 101, 1);
             buttonSignIn.Font = new Font("Verdana", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonSignIn.ForeColor = Color.White;
             buttonSignIn.Location = new Point(151, 430);
             buttonSignIn.Name = "buttonSignIn";
             buttonSignIn.Size = new Size(167, 53);

@@ -54,7 +54,7 @@
             // 
             // panelCartDetails
             // 
-            panelCartDetails.BackColor = Color.FromArgb(255, 211, 163);
+            panelCartDetails.BackColor = Color.FromArgb(242, 190, 167);
             panelCartDetails.Controls.Add(panel1);
             panelCartDetails.Controls.Add(pictureBox1);
             panelCartDetails.Controls.Add(dataGridView1);
@@ -172,6 +172,7 @@
             // 
             // panelSearch
             // 
+            panelSearch.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             panelSearch.BackColor = Color.FromArgb(242, 190, 167);
             panelSearch.Controls.Add(panelUnderLineSearch);
             panelSearch.Controls.Add(textBoxSearchInput);
@@ -186,10 +187,12 @@
             // 
             // panelUnderLineSearch
             // 
+            panelUnderLineSearch.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             panelUnderLineSearch.BackColor = SystemColors.MenuText;
+            panelUnderLineSearch.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point);
             panelUnderLineSearch.Location = new Point(207, 69);
             panelUnderLineSearch.Name = "panelUnderLineSearch";
-            panelUnderLineSearch.Size = new Size(1447, 3);
+            panelUnderLineSearch.Size = new Size(1319, 3);
             panelUnderLineSearch.TabIndex = 1;
             // 
             // textBoxSearchInput
@@ -200,7 +203,7 @@
             textBoxSearchInput.Location = new Point(207, 15);
             textBoxSearchInput.Name = "textBoxSearchInput";
             textBoxSearchInput.PlaceholderText = "Brand Name or SKU";
-            textBoxSearchInput.Size = new Size(1447, 49);
+            textBoxSearchInput.Size = new Size(1305, 49);
             textBoxSearchInput.TabIndex = 1;
             // 
             // buttonSearch
@@ -213,7 +216,7 @@
             buttonSearch.FlatStyle = FlatStyle.Flat;
             buttonSearch.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
             buttonSearch.ForeColor = SystemColors.ActiveCaptionText;
-            buttonSearch.Image = (Image)resources.GetObject("buttonSearch.Image");
+            buttonSearch.Image = Properties.Resources.iconsearch;
             buttonSearch.ImageAlign = ContentAlignment.MiddleRight;
             buttonSearch.Location = new Point(0, 0);
             buttonSearch.Margin = new Padding(5, 4, 5, 4);
@@ -228,6 +231,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             Controls.Add(panelSearch);
             Controls.Add(panelCartDetails);
             Name = "PointOfSale";
