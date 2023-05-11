@@ -183,6 +183,26 @@ namespace MenuSneakerBusiness.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_facebook_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-facebook-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_facebook_50__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-facebook-50 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_graph_report_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-graph-report-50", resourceCulture);
@@ -196,6 +216,46 @@ namespace MenuSneakerBusiness.Properties {
         internal static System.Drawing.Bitmap icons8_home_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-home-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_instagram_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-instagram-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_instagram_50__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-instagram-50 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_meta_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-meta-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_meta_50__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-meta-50 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

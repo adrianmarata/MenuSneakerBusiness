@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace MenuSneakerBusiness
 {
@@ -81,59 +82,35 @@ namespace MenuSneakerBusiness
         }
         private void buttonInventory_MouseLeave(object sender, EventArgs e)
         {
-            buttonInventory.TextImageRelation = TextImageRelation.ImageBeforeText;
-            buttonInventory.TextAlign = ContentAlignment.MiddleLeft;
-            buttonInventory.ImageAlign = ContentAlignment.MiddleLeft;
-            buttonInventory.Padding = new Padding(25, 0, 0, 0);
+            SetButtonPropertiesLeave(buttonInventory);
         }
         private void buttonInventory_MouseEnter(object sender, EventArgs e)
         {
-            buttonInventory.TextImageRelation = TextImageRelation.TextBeforeImage;
-            buttonInventory.TextAlign = ContentAlignment.MiddleRight;
-            buttonInventory.ImageAlign = ContentAlignment.MiddleRight;
-            buttonInventory.Padding = new Padding(0, 0, 25, 0);
+            SetButtonPropertiesEnter(buttonInventory);
         }
         private void buttonConsignment_MouseEnter(object sender, EventArgs e)
         {
-            buttonConsignment.TextImageRelation = TextImageRelation.TextBeforeImage;
-            buttonConsignment.TextAlign = ContentAlignment.MiddleRight;
-            buttonConsignment.ImageAlign = ContentAlignment.MiddleRight;
-            buttonConsignment.Padding = new Padding(0, 0, 25, 0);
+            SetButtonPropertiesEnter(buttonConsignment);
         }
         private void buttonConsignment_MouseLeave(object sender, EventArgs e)
         {
-            buttonConsignment.TextImageRelation = TextImageRelation.ImageBeforeText;
-            buttonConsignment.TextAlign = ContentAlignment.MiddleLeft;
-            buttonConsignment.ImageAlign = ContentAlignment.MiddleLeft;
-            buttonConsignment.Padding = new Padding(25, 0, 0, 0);
+            SetButtonPropertiesLeave(buttonConsignment);
         }
         private void buttonPOS_MouseEnter(object sender, EventArgs e)
         {
-            buttonPOS.TextImageRelation = TextImageRelation.TextBeforeImage;
-            buttonPOS.TextAlign = ContentAlignment.MiddleRight;
-            buttonPOS.ImageAlign = ContentAlignment.MiddleRight;
-            buttonPOS.Padding = new Padding(0, 0, 25, 0);
+            SetButtonPropertiesEnter(buttonPOS);
         }
         private void buttonFinancial_MouseEnter(object sender, EventArgs e)
         {
-            buttonFinancial.TextImageRelation = TextImageRelation.TextBeforeImage;
-            buttonFinancial.TextAlign = ContentAlignment.MiddleRight;
-            buttonFinancial.ImageAlign = ContentAlignment.MiddleRight;
-            buttonFinancial.Padding = new Padding(0, 0, 25, 0);
+            SetButtonPropertiesEnter(buttonFinancial);
         }
         private void buttonFinancial_MouseLeave(object sender, EventArgs e)
         {
-            buttonFinancial.TextImageRelation = TextImageRelation.ImageBeforeText;
-            buttonFinancial.TextAlign = ContentAlignment.MiddleLeft;
-            buttonFinancial.ImageAlign = ContentAlignment.MiddleLeft;
-            buttonFinancial.Padding = new Padding(25, 0, 0, 0);
+            SetButtonPropertiesLeave(buttonFinancial);
         }
         private void buttonPOS_MouseLeave(object sender, EventArgs e)
         {
-            buttonPOS.TextImageRelation = TextImageRelation.ImageBeforeText;
-            buttonPOS.TextAlign = ContentAlignment.MiddleLeft;
-            buttonPOS.ImageAlign = ContentAlignment.MiddleLeft;
-            buttonPOS.Padding = new Padding(25, 0, 0, 0);
+            SetButtonPropertiesLeave(buttonPOS);
         }
         private void pictureBoxExit_Click(object sender, EventArgs e)
         {
@@ -152,6 +129,76 @@ namespace MenuSneakerBusiness
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pictureBoxFacebook_Click(object sender, EventArgs e)
+        {
+            string url = "https://www.facebook.com/18000157500adrian/"; //FACEBOOK PAGE OF THE BUSINESS
+            openUrlInChrome(url);
+        }
+
+        private void pictureBoxInstagram_Click(object sender, EventArgs e)
+        {
+            string url = "https://www.facebook.com/janreintan"; //INSTAGRAM PAGE OF THE BUSINESS
+            openUrlInChrome(url);
+        }
+
+        private void pictureBoxMBS_Click(object sender, EventArgs e)
+        {
+            string url = "https://business.facebook.com/"; //META BUSINESS SUITE OF THE BUSINESS TO ANSWER INQUIRIES OF BOTH FB AND IG
+            openUrlInChrome(url);
+        }
+        public void openUrlInChrome(string url)
+        {
+            string chromePath = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"; //EDIT THIS IF YOUR CHROME IS IN ANOTHER FILE PATH.
+            ProcessStartInfo psi = new ProcessStartInfo();
+            psi.FileName = chromePath;
+            psi.Arguments = url;
+            Process.Start(psi);
+        }
+        private void SetButtonPropertiesLeave(Button button)
+        {
+            button.TextImageRelation = TextImageRelation.ImageBeforeText;
+            button.TextAlign = ContentAlignment.MiddleLeft;
+            button.ImageAlign = ContentAlignment.MiddleLeft;
+            button.Padding = new Padding(25, 0, 0, 0);
+        }
+        private void SetButtonPropertiesEnter(Button button)
+        {
+            button.TextImageRelation = TextImageRelation.TextBeforeImage;
+            button.TextAlign = ContentAlignment.MiddleRight;
+            button.ImageAlign = ContentAlignment.MiddleRight;
+            button.Padding = new Padding(0, 0, 25, 0);
+        }
+
+        private void pictureBoxInstagram_MouseEnter(object sender, EventArgs e)
+        {
+            pictureBoxInstagram.Image = Properties.Resources.icons8_instagram_50__1_;
+        }
+
+        private void pictureBoxInstagram_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBoxInstagram.Image = Properties.Resources.icons8_instagram_50;
+        }
+
+        private void pictureBoxFacebook_MouseEnter(object sender, EventArgs e)
+        {
+            pictureBoxFacebook.Image = Properties.Resources.icons8_facebook_50;
+        }
+
+        private void pictureBoxFacebook_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBoxFacebook.Image = Properties.Resources.icons8_facebook_50__1_;
+        }
+
+        private void pictureBoxMBS_MouseEnter(object sender, EventArgs e)
+        {
+            pictureBoxMBS.Image = Properties.Resources.icons8_meta_50__1_;
+        }
+
+        private void pictureBoxMBS_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBoxMBS.Image = Properties.Resources.icons8_meta_50;
         }
     }
 }

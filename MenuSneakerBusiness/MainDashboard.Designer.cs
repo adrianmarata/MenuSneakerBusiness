@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainDashboard));
             panelDashboard = new Panel();
+            pictureBoxMBS = new PictureBox();
+            pictureBoxInstagram = new PictureBox();
+            pictureBoxFacebook = new PictureBox();
             buttonFinancial = new Button();
             buttonPOS = new Button();
             buttonConsignment = new Button();
@@ -38,15 +41,18 @@
             labelPosition = new Label();
             labelEmployeeName = new Label();
             panelTop = new Panel();
-            pictureBox1 = new PictureBox();
+            pictureBoxMinimized = new PictureBox();
             pictureBoxExit = new PictureBox();
             currentForm = new Label();
             pictureBoxCurrentForm = new PictureBox();
             panelContents = new Panel();
             panelDashboard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxMBS).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxInstagram).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxFacebook).BeginInit();
             ((System.ComponentModel.ISupportInitialize)menuDashboardLogo).BeginInit();
             panelTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxMinimized).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxExit).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxCurrentForm).BeginInit();
             SuspendLayout();
@@ -56,6 +62,9 @@
             panelDashboard.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             panelDashboard.BackColor = Color.Transparent;
             panelDashboard.BackgroundImage = Properties.Resources.COLOR_BG;
+            panelDashboard.Controls.Add(pictureBoxMBS);
+            panelDashboard.Controls.Add(pictureBoxInstagram);
+            panelDashboard.Controls.Add(pictureBoxFacebook);
             panelDashboard.Controls.Add(buttonFinancial);
             panelDashboard.Controls.Add(buttonPOS);
             panelDashboard.Controls.Add(buttonConsignment);
@@ -66,6 +75,46 @@
             panelDashboard.Name = "panelDashboard";
             panelDashboard.Size = new Size(390, 1033);
             panelDashboard.TabIndex = 0;
+            // 
+            // pictureBoxMBS
+            // 
+            pictureBoxMBS.Image = Properties.Resources.icons8_meta_50;
+            pictureBoxMBS.Location = new Point(160, 971);
+            pictureBoxMBS.Name = "pictureBoxMBS";
+            pictureBoxMBS.Size = new Size(50, 50);
+            pictureBoxMBS.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBoxMBS.TabIndex = 7;
+            pictureBoxMBS.TabStop = false;
+            pictureBoxMBS.Click += pictureBoxMBS_Click;
+            pictureBoxMBS.MouseEnter += pictureBoxMBS_MouseEnter;
+            pictureBoxMBS.MouseLeave += pictureBoxMBS_MouseLeave;
+            // 
+            // pictureBoxInstagram
+            // 
+            pictureBoxInstagram.Image = Properties.Resources.icons8_instagram_50;
+            pictureBoxInstagram.Location = new Point(86, 971);
+            pictureBoxInstagram.Name = "pictureBoxInstagram";
+            pictureBoxInstagram.Size = new Size(50, 50);
+            pictureBoxInstagram.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBoxInstagram.TabIndex = 6;
+            pictureBoxInstagram.TabStop = false;
+            pictureBoxInstagram.Click += pictureBoxInstagram_Click;
+            pictureBoxInstagram.MouseEnter += pictureBoxInstagram_MouseEnter;
+            pictureBoxInstagram.MouseLeave += pictureBoxInstagram_MouseLeave;
+            // 
+            // pictureBoxFacebook
+            // 
+            pictureBoxFacebook.BackColor = Color.Transparent;
+            pictureBoxFacebook.Image = Properties.Resources.icons8_facebook_50__1_;
+            pictureBoxFacebook.Location = new Point(12, 971);
+            pictureBoxFacebook.Name = "pictureBoxFacebook";
+            pictureBoxFacebook.Size = new Size(50, 50);
+            pictureBoxFacebook.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBoxFacebook.TabIndex = 5;
+            pictureBoxFacebook.TabStop = false;
+            pictureBoxFacebook.Click += pictureBoxFacebook_Click;
+            pictureBoxFacebook.MouseEnter += pictureBoxFacebook_MouseEnter;
+            pictureBoxFacebook.MouseLeave += pictureBoxFacebook_MouseLeave;
             // 
             // buttonFinancial
             // 
@@ -213,7 +262,7 @@
             // 
             panelTop.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             panelTop.BackgroundImage = Properties.Resources.COLOR_BG;
-            panelTop.Controls.Add(pictureBox1);
+            panelTop.Controls.Add(pictureBoxMinimized);
             panelTop.Controls.Add(pictureBoxExit);
             panelTop.Controls.Add(currentForm);
             panelTop.Controls.Add(labelEmployeeName);
@@ -225,17 +274,17 @@
             panelTop.Size = new Size(1512, 112);
             panelTop.TabIndex = 2;
             // 
-            // pictureBox1
+            // pictureBoxMinimized
             // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Image = Properties.Resources.icons8_minimize_window_50;
-            pictureBox1.Location = new Point(1428, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(50, 50);
-            pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
+            pictureBoxMinimized.BackColor = Color.Transparent;
+            pictureBoxMinimized.Image = Properties.Resources.icons8_minimize_window_50;
+            pictureBoxMinimized.Location = new Point(1428, 3);
+            pictureBoxMinimized.Name = "pictureBoxMinimized";
+            pictureBoxMinimized.Size = new Size(50, 50);
+            pictureBoxMinimized.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBoxMinimized.TabIndex = 0;
+            pictureBoxMinimized.TabStop = false;
+            pictureBoxMinimized.Click += pictureBox1_Click;
             // 
             // pictureBoxExit
             // 
@@ -299,10 +348,14 @@
             WindowState = FormWindowState.Maximized;
             FormClosed += MainDashboard_FormClosed;
             panelDashboard.ResumeLayout(false);
+            panelDashboard.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxMBS).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxInstagram).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxFacebook).EndInit();
             ((System.ComponentModel.ISupportInitialize)menuDashboardLogo).EndInit();
             panelTop.ResumeLayout(false);
             panelTop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxMinimized).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxExit).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxCurrentForm).EndInit();
             ResumeLayout(false);
@@ -322,7 +375,10 @@
         private PictureBox pictureBoxCurrentForm;
         private Button buttonFinancial;
         private Panel panelContents;
-        private PictureBox pictureBox1;
+        private PictureBox pictureBoxMinimized;
         private PictureBox pictureBoxExit;
+        private PictureBox pictureBoxFacebook;
+        private PictureBox pictureBoxMBS;
+        private PictureBox pictureBoxInstagram;
     }
 }
