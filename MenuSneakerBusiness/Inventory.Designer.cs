@@ -53,7 +53,7 @@
             panelSearch.Location = new Point(0, 0);
             panelSearch.Margin = new Padding(5, 4, 5, 4);
             panelSearch.Name = "panelSearch";
-            panelSearch.Size = new Size(1902, 75);
+            panelSearch.Size = new Size(1280, 75);
             panelSearch.TabIndex = 0;
             panelSearch.TabStop = true;
             // 
@@ -68,7 +68,7 @@
             buttonAddItem.FlatStyle = FlatStyle.Flat;
             buttonAddItem.Image = Properties.Resources.iconadd;
             buttonAddItem.ImageAlign = ContentAlignment.MiddleRight;
-            buttonAddItem.Location = new Point(1660, 0);
+            buttonAddItem.Location = new Point(1038, 0);
             buttonAddItem.Name = "buttonAddItem";
             buttonAddItem.Size = new Size(242, 75);
             buttonAddItem.TabIndex = 2;
@@ -80,9 +80,9 @@
             // panelUnderLineSearch
             // 
             panelUnderLineSearch.BackColor = SystemColors.MenuText;
-            panelUnderLineSearch.Location = new Point(207, 69);
+            panelUnderLineSearch.Location = new Point(207, 66);
             panelUnderLineSearch.Name = "panelUnderLineSearch";
-            panelUnderLineSearch.Size = new Size(1447, 3);
+            panelUnderLineSearch.Size = new Size(825, 3);
             panelUnderLineSearch.TabIndex = 1;
             // 
             // textBoxSearchInput
@@ -90,10 +90,10 @@
             textBoxSearchInput.BackColor = Color.FromArgb(242, 190, 167);
             textBoxSearchInput.BorderStyle = BorderStyle.None;
             textBoxSearchInput.Font = new Font("Verdana", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxSearchInput.Location = new Point(207, 15);
+            textBoxSearchInput.Location = new Point(207, 24);
             textBoxSearchInput.Name = "textBoxSearchInput";
             textBoxSearchInput.PlaceholderText = "Brand Name or SKU";
-            textBoxSearchInput.Size = new Size(1447, 49);
+            textBoxSearchInput.Size = new Size(825, 39);
             textBoxSearchInput.TabIndex = 1;
             // 
             // buttonSearch
@@ -128,7 +128,7 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(1902, 808);
+            dataGridView1.Size = new Size(1280, 645);
             dataGridView1.TabIndex = 1;
             // 
             // Column1
@@ -155,7 +155,7 @@
             // 
             // Inventory
             // 
-            AutoScaleDimensions = new SizeF(13F, 25F);
+            AutoScaleDimensions = new SizeF(10F, 18F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             Controls.Add(dataGridView1);
@@ -163,7 +163,7 @@
             Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
             Margin = new Padding(5, 4, 5, 4);
             Name = "Inventory";
-            Size = new Size(1902, 883);
+            Size = new Size(1280, 720);
             panelSearch.ResumeLayout(false);
             panelSearch.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

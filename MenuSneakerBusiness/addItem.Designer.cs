@@ -35,7 +35,6 @@
             Price = new Label();
             textBoxItemName = new TextBox();
             textBoxSKU = new TextBox();
-            Size = new Label();
             textBoxSize = new TextBox();
             textBoxPrice = new TextBox();
             comboBoxCondition = new ComboBox();
@@ -98,16 +97,6 @@
             textBoxSKU.Size = new Size(508, 39);
             textBoxSKU.TabIndex = 7;
             // 
-            // Size
-            // 
-            Size.AutoSize = true;
-            Size.Font = new Font("Verdana", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            Size.Location = new Point(14, 221);
-            Size.Name = "Size";
-            Size.Size = new Size(81, 32);
-            Size.TabIndex = 3;
-            Size.Text = "Size:";
-            // 
             // textBoxSize
             // 
             textBoxSize.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
@@ -162,7 +151,6 @@
             Controls.Add(textBoxItemName);
             Controls.Add(Price);
             Controls.Add(SKU);
-            Controls.Add(Size);
             Controls.Add(ItemName);
             Controls.Add(Condition);
             MaximizeBox = false;
@@ -183,7 +171,6 @@
         private Label Price;
         private TextBox textBoxItemName;
         private TextBox textBoxSKU;
-        private Label Size;
         private TextBox textBoxSize;
         private TextBox textBoxPrice;
         private ComboBox comboBoxCondition;

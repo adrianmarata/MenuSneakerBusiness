@@ -173,6 +173,16 @@ namespace MenuSneakerBusiness.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_exit_50__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-exit-50 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_eye_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-eye-32", resourceCulture);
@@ -243,6 +253,26 @@ namespace MenuSneakerBusiness.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_maximize_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-maximize-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_maximize_50__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-maximize-50 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_meta_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-meta-50", resourceCulture);
@@ -266,6 +296,16 @@ namespace MenuSneakerBusiness.Properties {
         internal static System.Drawing.Bitmap icons8_minimize_window_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-minimize-window-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_minimize_window_50__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-minimize-window-50 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

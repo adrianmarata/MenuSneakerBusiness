@@ -200,5 +200,47 @@ namespace MenuSneakerBusiness
         {
             pictureBoxMBS.Image = Properties.Resources.icons8_meta_50;
         }
+
+        private void pictureBoxMaximized_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+        }
+
+        private void pictureBoxExit_MouseEnter(object sender, EventArgs e)
+        {
+            pictureBoxExit.Image = Properties.Resources.icons8_exit_50;
+        }
+
+        private void pictureBoxExit_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBoxExit.Image = Properties.Resources.icons8_exit_50__1_;
+        }
+
+        private void pictureBoxMaximized_MouseEnter(object sender, EventArgs e)
+        {
+            pictureBoxMaximized.Image = Properties.Resources.icons8_maximize_50;
+        }
+
+        private void pictureBoxMaximized_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBoxMaximized.Image = Properties.Resources.icons8_maximize_50__1_;
+        }
+
+        private void pictureBoxMinimized_MouseEnter(object sender, EventArgs e)
+        {
+            pictureBoxMinimized.Image = Properties.Resources.icons8_minimize_window_50;
+        }
+
+        private void pictureBoxMinimized_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBoxMinimized.Image = Properties.Resources.icons8_minimize_window_50__1_;
+        }
     }
 }
