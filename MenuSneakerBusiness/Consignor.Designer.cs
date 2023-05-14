@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Consignor));
             labelDetails = new Label();
             textBoxConsignorName = new TextBox();
             textBoxConsignorEmailAddress = new TextBox();
@@ -41,9 +40,9 @@
             // 
             labelDetails.AutoSize = true;
             labelDetails.Font = new Font("Verdana", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            labelDetails.Location = new Point(77, 25);
+            labelDetails.Location = new Point(67, 19);
             labelDetails.Name = "labelDetails";
-            labelDetails.Size = new Size(375, 48);
+            labelDetails.Size = new Size(299, 38);
             labelDetails.TabIndex = 0;
             labelDetails.Text = "Consignor Details";
             // 
@@ -51,66 +50,73 @@
             // 
             textBoxConsignorName.AcceptsTab = true;
             textBoxConsignorName.Font = new Font("Verdana", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxConsignorName.Location = new Point(34, 95);
+            textBoxConsignorName.Location = new Point(30, 71);
+            textBoxConsignorName.Margin = new Padding(3, 2, 3, 2);
             textBoxConsignorName.Name = "textBoxConsignorName";
             textBoxConsignorName.PlaceholderText = "Consignor Name";
-            textBoxConsignorName.Size = new Size(465, 40);
+            textBoxConsignorName.Size = new Size(407, 34);
             textBoxConsignorName.TabIndex = 1;
             // 
             // textBoxConsignorEmailAddress
             // 
             textBoxConsignorEmailAddress.AcceptsTab = true;
             textBoxConsignorEmailAddress.Font = new Font("Verdana", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxConsignorEmailAddress.Location = new Point(34, 186);
+            textBoxConsignorEmailAddress.Location = new Point(30, 140);
+            textBoxConsignorEmailAddress.Margin = new Padding(3, 2, 3, 2);
             textBoxConsignorEmailAddress.Name = "textBoxConsignorEmailAddress";
             textBoxConsignorEmailAddress.PlaceholderText = "Email Address";
-            textBoxConsignorEmailAddress.Size = new Size(465, 40);
+            textBoxConsignorEmailAddress.Size = new Size(407, 34);
             textBoxConsignorEmailAddress.TabIndex = 2;
             // 
             // textBoxCellphoneNumber
             // 
             textBoxCellphoneNumber.AcceptsTab = true;
             textBoxCellphoneNumber.Font = new Font("Verdana", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxCellphoneNumber.Location = new Point(34, 281);
+            textBoxCellphoneNumber.Location = new Point(30, 211);
+            textBoxCellphoneNumber.Margin = new Padding(3, 2, 3, 2);
             textBoxCellphoneNumber.Name = "textBoxCellphoneNumber";
             textBoxCellphoneNumber.PlaceholderText = "Cellphone Number";
-            textBoxCellphoneNumber.Size = new Size(465, 40);
+            textBoxCellphoneNumber.Size = new Size(407, 34);
             textBoxCellphoneNumber.TabIndex = 3;
             // 
             // textBoxAddress
             // 
             textBoxAddress.AcceptsTab = true;
             textBoxAddress.Font = new Font("Verdana", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxAddress.Location = new Point(34, 377);
+            textBoxAddress.Location = new Point(30, 283);
+            textBoxAddress.Margin = new Padding(3, 2, 3, 2);
             textBoxAddress.Name = "textBoxAddress";
             textBoxAddress.PlaceholderText = "Address";
-            textBoxAddress.Size = new Size(465, 40);
+            textBoxAddress.Size = new Size(407, 34);
             textBoxAddress.TabIndex = 4;
             // 
             // buttonAddConsignor
             // 
-            buttonAddConsignor.BackgroundImage = (Image)resources.GetObject("buttonAddConsignor.BackgroundImage");
+            buttonAddConsignor.BackColor = Color.FromArgb(192, 211, 254);
             buttonAddConsignor.FlatAppearance.BorderSize = 0;
             buttonAddConsignor.FlatStyle = FlatStyle.Flat;
             buttonAddConsignor.Font = new Font("Verdana", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonAddConsignor.Location = new Point(147, 459);
+            buttonAddConsignor.ForeColor = Color.Black;
+            buttonAddConsignor.Location = new Point(129, 344);
+            buttonAddConsignor.Margin = new Padding(3, 2, 3, 2);
             buttonAddConsignor.Name = "buttonAddConsignor";
-            buttonAddConsignor.Size = new Size(212, 88);
+            buttonAddConsignor.Size = new Size(186, 66);
             buttonAddConsignor.TabIndex = 1;
             buttonAddConsignor.Text = "Add Consignor";
-            buttonAddConsignor.UseVisualStyleBackColor = true;
+            buttonAddConsignor.UseVisualStyleBackColor = false;
             // 
             // Consignor
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(532, 603);
+            ClientSize = new Size(466, 452);
             Controls.Add(buttonAddConsignor);
             Controls.Add(textBoxAddress);
             Controls.Add(textBoxCellphoneNumber);
             Controls.Add(textBoxConsignorEmailAddress);
             Controls.Add(textBoxConsignorName);
             Controls.Add(labelDetails);
+            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Consignor";

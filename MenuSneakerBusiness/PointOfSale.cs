@@ -17,7 +17,7 @@ namespace MenuSneakerBusiness
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonPay_Click(object sender, EventArgs e)
         {
             Pay pay = new Pay();
             pay.ShowDialog();

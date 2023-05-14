@@ -29,8 +29,7 @@ namespace MenuSneakerBusiness
             buttonPOS.BackColor = Color.Transparent;
             buttonFinancial.BackColor = Color.Transparent;
             buttonConsignment.BackColor = Color.Transparent;
-            buttonInventory.BackColor = Color.FromArgb(255, 128, 0);
-            //buttonInventory.ForeColor = ColorTranslator.FromHtml("#280137");
+            buttonInventory.BackColor = ColorTranslator.FromHtml("#c0d3fe");
             pictureBoxCurrentForm.Image = Properties.Resources.icons8_open_box_50;
             currentForm.Text = buttonInventory.Text;
             panelContents.Controls.Clear();
@@ -44,7 +43,7 @@ namespace MenuSneakerBusiness
             buttonPOS.BackColor = Color.Transparent;
             buttonInventory.BackColor = Color.Transparent;
             buttonFinancial.BackColor = Color.Transparent;
-            buttonConsignment.BackColor = Color.FromArgb(255, 128, 0);
+            buttonConsignment.BackColor = ColorTranslator.FromHtml("#c0d3fe");
             pictureBoxCurrentForm.Image = Properties.Resources.icons8_consignment_50;
             currentForm.Text = buttonConsignment.Text;
             panelContents.Controls.Clear();
@@ -58,7 +57,7 @@ namespace MenuSneakerBusiness
             buttonInventory.BackColor = Color.Transparent;
             buttonConsignment.BackColor = Color.Transparent;
             buttonFinancial.BackColor = Color.Transparent;
-            buttonPOS.BackColor = Color.FromArgb(255, 128, 0);
+            buttonPOS.BackColor = ColorTranslator.FromHtml("#c0d3fe");
             pictureBoxCurrentForm.Image = Properties.Resources.icons8_receipt_50;
             currentForm.Text = buttonPOS.Text;
             panelContents.Controls.Clear();
@@ -72,7 +71,7 @@ namespace MenuSneakerBusiness
             buttonInventory.BackColor = Color.Transparent;
             buttonConsignment.BackColor = Color.Transparent;
             buttonPOS.BackColor = Color.Transparent;
-            buttonFinancial.BackColor = Color.FromArgb(255, 128, 0);
+            buttonFinancial.BackColor = ColorTranslator.FromHtml("#c0d3fe");
             pictureBoxCurrentForm.Image = Properties.Resources.icons8_graph_report_50;
             currentForm.Text = buttonFinancial.Text;
             panelContents.Controls.Clear();
@@ -80,38 +79,7 @@ namespace MenuSneakerBusiness
             financial.Dock = DockStyle.Fill;
             panelContents.Controls.Add(financial);
         }
-        private void buttonInventory_MouseLeave(object sender, EventArgs e)
-        {
-            SetButtonPropertiesLeave(buttonInventory);
-        }
-        private void buttonInventory_MouseEnter(object sender, EventArgs e)
-        {
-            SetButtonPropertiesEnter(buttonInventory);
-        }
-        private void buttonConsignment_MouseEnter(object sender, EventArgs e)
-        {
-            SetButtonPropertiesEnter(buttonConsignment);
-        }
-        private void buttonConsignment_MouseLeave(object sender, EventArgs e)
-        {
-            SetButtonPropertiesLeave(buttonConsignment);
-        }
-        private void buttonPOS_MouseEnter(object sender, EventArgs e)
-        {
-            SetButtonPropertiesEnter(buttonPOS);
-        }
-        private void buttonFinancial_MouseEnter(object sender, EventArgs e)
-        {
-            SetButtonPropertiesEnter(buttonFinancial);
-        }
-        private void buttonFinancial_MouseLeave(object sender, EventArgs e)
-        {
-            SetButtonPropertiesLeave(buttonFinancial);
-        }
-        private void buttonPOS_MouseLeave(object sender, EventArgs e)
-        {
-            SetButtonPropertiesLeave(buttonPOS);
-        }
+
         private void pictureBoxExit_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -170,6 +138,39 @@ namespace MenuSneakerBusiness
             button.ImageAlign = ContentAlignment.MiddleRight;
             button.Padding = new Padding(0, 0, 25, 0);
         }
+        private void buttonInventory_MouseLeave(object sender, EventArgs e)
+        {
+            SetButtonPropertiesLeave(buttonInventory);
+        }
+        private void buttonInventory_MouseEnter(object sender, EventArgs e)
+        {
+            SetButtonPropertiesEnter(buttonInventory);
+        }
+        private void buttonConsignment_MouseEnter(object sender, EventArgs e)
+        {
+            SetButtonPropertiesEnter(buttonConsignment);
+        }
+        private void buttonConsignment_MouseLeave(object sender, EventArgs e)
+        {
+            SetButtonPropertiesLeave(buttonConsignment);
+        }
+        private void buttonPOS_MouseEnter(object sender, EventArgs e)
+        {
+            SetButtonPropertiesEnter(buttonPOS);
+        }
+        private void buttonFinancial_MouseEnter(object sender, EventArgs e)
+        {
+            SetButtonPropertiesEnter(buttonFinancial);
+        }
+        private void buttonFinancial_MouseLeave(object sender, EventArgs e)
+        {
+            SetButtonPropertiesLeave(buttonFinancial);
+        }
+        private void buttonPOS_MouseLeave(object sender, EventArgs e)
+        {
+            SetButtonPropertiesLeave(buttonPOS);
+        }
+
 
         private void pictureBoxInstagram_MouseEnter(object sender, EventArgs e)
         {

@@ -62,8 +62,7 @@
             // panelDashboard
             // 
             panelDashboard.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            panelDashboard.BackColor = Color.Transparent;
-            panelDashboard.BackgroundImage = Properties.Resources.COLOR_BG;
+            panelDashboard.BackColor = Color.FromArgb(254, 235, 192);
             panelDashboard.Controls.Add(pictureBoxMBS);
             panelDashboard.Controls.Add(pictureBoxInstagram);
             panelDashboard.Controls.Add(pictureBoxFacebook);
@@ -127,10 +126,10 @@
             buttonFinancial.Dock = DockStyle.Top;
             buttonFinancial.FlatAppearance.BorderSize = 0;
             buttonFinancial.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            buttonFinancial.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 128, 0);
+            buttonFinancial.FlatAppearance.MouseOverBackColor = Color.FromArgb(192, 211, 254);
             buttonFinancial.FlatStyle = FlatStyle.Flat;
             buttonFinancial.Font = new Font("Verdana", 22.2F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonFinancial.ForeColor = Color.White;
+            buttonFinancial.ForeColor = Color.Black;
             buttonFinancial.Image = (Image)resources.GetObject("buttonFinancial.Image");
             buttonFinancial.ImageAlign = ContentAlignment.MiddleLeft;
             buttonFinancial.Location = new Point(0, 472);
@@ -152,10 +151,10 @@
             buttonPOS.Dock = DockStyle.Top;
             buttonPOS.FlatAppearance.BorderSize = 0;
             buttonPOS.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            buttonPOS.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 128, 0);
+            buttonPOS.FlatAppearance.MouseOverBackColor = Color.FromArgb(192, 211, 254);
             buttonPOS.FlatStyle = FlatStyle.Flat;
             buttonPOS.Font = new Font("Verdana", 22.2F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonPOS.ForeColor = Color.White;
+            buttonPOS.ForeColor = Color.Black;
             buttonPOS.Image = (Image)resources.GetObject("buttonPOS.Image");
             buttonPOS.ImageAlign = ContentAlignment.MiddleLeft;
             buttonPOS.Location = new Point(0, 352);
@@ -177,10 +176,10 @@
             buttonConsignment.Dock = DockStyle.Top;
             buttonConsignment.FlatAppearance.BorderSize = 0;
             buttonConsignment.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            buttonConsignment.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 128, 0);
+            buttonConsignment.FlatAppearance.MouseOverBackColor = Color.FromArgb(192, 211, 254);
             buttonConsignment.FlatStyle = FlatStyle.Flat;
             buttonConsignment.Font = new Font("Verdana", 22.2F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonConsignment.ForeColor = Color.White;
+            buttonConsignment.ForeColor = Color.Black;
             buttonConsignment.Image = (Image)resources.GetObject("buttonConsignment.Image");
             buttonConsignment.ImageAlign = ContentAlignment.MiddleLeft;
             buttonConsignment.Location = new Point(0, 232);
@@ -202,10 +201,10 @@
             buttonInventory.Dock = DockStyle.Top;
             buttonInventory.FlatAppearance.BorderSize = 0;
             buttonInventory.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            buttonInventory.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 128, 0);
+            buttonInventory.FlatAppearance.MouseOverBackColor = Color.FromArgb(192, 211, 254);
             buttonInventory.FlatStyle = FlatStyle.Flat;
             buttonInventory.Font = new Font("Verdana", 22.2F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonInventory.ForeColor = Color.White;
+            buttonInventory.ForeColor = Color.Black;
             buttonInventory.Image = (Image)resources.GetObject("buttonInventory.Image");
             buttonInventory.ImageAlign = ContentAlignment.MiddleLeft;
             buttonInventory.Location = new Point(0, 112);
@@ -227,11 +226,11 @@
             menuDashboardLogo.BackColor = Color.Transparent;
             menuDashboardLogo.BackgroundImageLayout = ImageLayout.Center;
             menuDashboardLogo.Dock = DockStyle.Top;
-            menuDashboardLogo.Image = Properties.Resources.MAIN_DASHBOARD_LOGO;
+            menuDashboardLogo.Image = (Image)resources.GetObject("menuDashboardLogo.Image");
             menuDashboardLogo.Location = new Point(0, 0);
             menuDashboardLogo.Name = "menuDashboardLogo";
             menuDashboardLogo.Size = new Size(390, 112);
-            menuDashboardLogo.SizeMode = PictureBoxSizeMode.CenterImage;
+            menuDashboardLogo.SizeMode = PictureBoxSizeMode.StretchImage;
             menuDashboardLogo.TabIndex = 0;
             menuDashboardLogo.TabStop = false;
             // 
@@ -241,7 +240,7 @@
             labelPosition.AutoSize = true;
             labelPosition.BackColor = Color.Transparent;
             labelPosition.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            labelPosition.ForeColor = Color.White;
+            labelPosition.ForeColor = Color.Black;
             labelPosition.Location = new Point(600, 80);
             labelPosition.Name = "labelPosition";
             labelPosition.Size = new Size(74, 18);
@@ -254,7 +253,7 @@
             labelEmployeeName.AutoSize = true;
             labelEmployeeName.BackColor = Color.Transparent;
             labelEmployeeName.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            labelEmployeeName.ForeColor = Color.White;
+            labelEmployeeName.ForeColor = Color.Black;
             labelEmployeeName.Location = new Point(600, 55);
             labelEmployeeName.Name = "labelEmployeeName";
             labelEmployeeName.Size = new Size(140, 18);
@@ -264,7 +263,7 @@
             // panelTop
             // 
             panelTop.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            panelTop.BackgroundImage = Properties.Resources.COLOR_BG;
+            panelTop.BackColor = Color.FromArgb(254, 235, 192);
             panelTop.Controls.Add(pictureBoxMaximized);
             panelTop.Controls.Add(pictureBoxMinimized);
             panelTop.Controls.Add(pictureBoxExit);
@@ -328,7 +327,7 @@
             currentForm.AutoSize = true;
             currentForm.BackColor = Color.Transparent;
             currentForm.Font = new Font("Verdana", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            currentForm.ForeColor = Color.White;
+            currentForm.ForeColor = Color.Black;
             currentForm.Location = new Point(62, 77);
             currentForm.Name = "currentForm";
             currentForm.Size = new Size(72, 23);
@@ -349,6 +348,7 @@
             // panelContents
             // 
             panelContents.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            panelContents.BackColor = Color.White;
             panelContents.Dock = DockStyle.Fill;
             panelContents.Location = new Point(390, 112);
             panelContents.Name = "panelContents";
@@ -359,6 +359,7 @@
             // 
             AutoScaleMode = AutoScaleMode.Inherit;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            BackColor = Color.White;
             ClientSize = new Size(1280, 720);
             Controls.Add(panelContents);
             Controls.Add(panelTop);

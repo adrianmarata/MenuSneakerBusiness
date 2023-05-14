@@ -73,6 +73,16 @@ namespace MenuSneakerBusiness.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap COLOR_BG_WELACEDIT {
+            get {
+                object obj = ResourceManager.GetObject("COLOR BG WELACEDIT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconadd {
             get {
                 object obj = ResourceManager.GetObject("iconadd", resourceCulture);
@@ -476,6 +486,16 @@ namespace MenuSneakerBusiness.Properties {
         internal static System.Drawing.Bitmap USERNAME_LOGO1 {
             get {
                 object obj = ResourceManager.GetObject("USERNAME LOGO1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WeLacedIt {
+            get {
+                object obj = ResourceManager.GetObject("WeLacedIt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

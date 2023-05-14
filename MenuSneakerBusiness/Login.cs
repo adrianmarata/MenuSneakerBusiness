@@ -6,12 +6,6 @@ namespace MenuSneakerBusiness
         {
             InitializeComponent();
         }
-
-        private void buttonExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void buttonSignIn_Click(object sender, EventArgs e)
         {
             this.Hide();
